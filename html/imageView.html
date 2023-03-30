@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <!-- DevExtreme theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn3.devexpress.com/jslib/22.2.4/css/dx.light.css"
+    />
+    <!-- DevExtreme library -->
+    <script
+      type="text/javascript"
+      src="https://cdn3.devexpress.com/jslib/22.2.4/js/dx.all.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/imageView.css" />
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script type="text/javascript" src="../js/imageView.js"></script>
+
+    <title>고양이 앱</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal closeModal"></div>
+      <div class="contents-modal closeModal">
+        <div class="header-modal">
+          <span id="catName-modal"></span>
+          <i
+            onclick="closeModal()"
+            class="fas fa-times"
+            style="cursor: pointer; margin-right: 2%; margin-top: 1%"
+          ></i>
+        </div>
+        <div class="body-modal"></div>
+        <div class="footer-modal"></div>
+      </div>
+
+      <nav class="top-nav">
+        <span style="margin-left: 15px; font-size: 15px; font-weight: bold"
+          ><i class="fas fa-solid fa-cat" style="color: black"></i
+          >&nbsp;&nbsp;야옹야옹_고양이 앱</span
+        >
+        <span style="font-size: 12px; font-weight: normal; margin-right: 15px"
+          ><strong>Hanyeong.jeon@cloudmt.co.kr</strong> 님 환영합니다.</span
+        >
+      </nav>
+      <div class="contents">
+        <div class="side-nav">
+          <div class="side-menu" style="border-bottom: 1px solid lightgray">
+            <i class="fas fa-th-list"></i>
+            <span>서비스</span>
+          </div>
+          <div class="side-menu side-hamburger">
+            <i class="fas fa-solid fa-bars"></i>
+          </div>
+          <div class="side-menu menu-title">
+            <i class="fas fa-home"></i
+            ><a href="../index.html"><span>고양이 관리</span></a>
+          </div>
+          <div class="side-menu menu-title" style="background-color: lavender">
+            <i class="fas fa-images"></i
+            ><a href="./imageView.html"
+              ><span style="font-weight: bold">고양이 리스트</span></a
+            >
+          </div>
+        </div>
+
+        <div class="dx-viewport" id="app-container">
+          <div id="searching"></div>
+          <div class="image-view" id="image-view"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

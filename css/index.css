@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.dx-widget {
+  font-family: "Pretendard-Regular";
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard-Regular";
+  overflow-y: hidden;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  font-family: "Pretendard-Regular";
+}
+
+.top-nav {
+  display: flex;
+  background-color: lavender;
+  width: 100%;
+  height: 4vh;
+  color: black;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+}
+
+.contents {
+  margin: 0;
+  display: flex;
+  /*display: grid;*/
+  height: 100%;
+  width: 100%;
+  /*grid-template-columns: 200px 3fr;*/
+}
+.side-nav {
+  z-index: 999;
+  background-color: white;
+  height: 96vh;
+  width: 15vw; /*2.2vw*/
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid lightgray;
+  font-size: 14px;
+}
+
+.side-hamburger {
+  width: 2em;
+  height: auto;
+  overflow: auto;
+}
+
+.side-hamburger .fa-bars {
+  cursor: pointer;
+}
+
+.side-nav .side-menu {
+  text-align: left;
+  height: 40px;
+  align-items: center;
+  line-height: 40px;
+
+  padding-left: 15px;
+}
+/*
+.side-nav .side-menu:nth-child(n + 2):hover {
+  background-color: lightgray;
+}
+*/
+.side-nav .side-menu span {
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.side-nav .side-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.side-nav .menu-title span:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#app-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+#selected-employee {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#dataGrid {
+  width: 100%;
+  height: 90vh;
+}

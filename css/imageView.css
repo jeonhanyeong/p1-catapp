@@ -1,0 +1,141 @@
+#searching {
+  display: inline-block;
+  width: 10vw;
+}
+
+.image-view {
+  font-family: "Pretendard-Regular";
+  margin-top: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 77vh;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 24rem 24rem;
+  grid-auto-rows: 24rem;
+  box-sizing: border-box;
+  visibility: visible;
+}
+.image-components {
+  margin: 0.3rem;
+  border: 1px solid lightgray;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+.images {
+  width: 100%;
+  height: 70%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.images-Like {
+  position: relative;
+}
+
+.images-Like span {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 2%;
+}
+
+.fa-heart {
+  color: #ff7575;
+  font-size: 18px;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.images-tag {
+  position: relative;
+  min-height: 20%;
+  max-height: 20%;
+}
+
+.images-tag span {
+  padding: 0.5rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.modal {
+  font-family: "Pretendard-Regular";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.contents-modal {
+  position: fixed;
+  z-index: 9999;
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  margin-top: 10%;
+  margin-left: 35%;
+}
+.header-modal {
+  display: flex;
+  justify-content: space-between;
+  height: 12%;
+  font-size: 18px;
+  border-bottom: 1px solid lightgray;
+}
+
+.header-modal span {
+  font-size: 25px;
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.body-modal {
+  height: 85%;
+}
+
+.images-modal {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.closeModal {
+  display: none;
+}
+
+#loadingBar {
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  margin: auto;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+}
+
+#seachResultIsNone {
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  margin: auto;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+}
